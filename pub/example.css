@@ -1,0 +1,266 @@
+.main_header{
+    width:100%;
+    top: 0px;
+    left: 50%;
+}
+
+.main_header2{
+    position: fixed;
+    width:30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index_page{
+    width: 100%;
+    height: 100%;
+/*    background-color: grey;*/
+    padding: 0;
+    margin: 0;
+    border: 0;
+/*    overflow: hidden;*/
+}
+
+.anify{
+    position: fixed;
+    width: 100%;
+    top: 40%;
+    transform: translate(0%, -50%);
+}
+
+.anify_tit{
+    position:relative;
+/*    text-align: center;*/
+    display: inline-block;
+    color: white;
+/*    width: 100%;*/
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.animation_dispaly{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.animation_container{
+    float: left;
+    position: relative;
+    width: 25%;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.cavas_profile{
+    float: left;
+    position: relative;
+    width: 33%;
+    height: 100%;
+}
+
+.canvas_display{
+    width: 100%;
+    height: 50%;
+}
+
+.bubble_canv{
+    width: 900px;
+    height: 1100px;
+}
+
+.space{
+    position: relative;
+    float:left;
+    width: 100%;
+    height: 40px;
+}
+
+.canvas_section{
+    position: relative;
+    float:left;
+    width: 20%;
+    height:100%;
+    transform: translate(0%, -25%);
+}
+
+.profile_can{
+    position: relative;
+    width: 168px;
+    height: 168px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.main_container{
+    overflow: hidden;
+    top: 50px;
+    position: relative;
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.main_container2{
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+/*    border: 1px solid #80ff00;*/
+}
+
+.functions{
+    float: left;
+    left:50px;
+    display: inline-block;
+}
+
+.nameofmethod{
+    position: relative;
+    float: left;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+.descriptionofmethod{
+    position: relative;
+    float: left;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+.parameters{
+    position: relative;
+    float: left;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 19px;
+}
+
+.description{
+    text-align: left;
+}
+
+.header{
+    position: relative;
+    display: inline-block;
+    width: 900px;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 1px 1px 3px blue;
+    font-size: 30px;
+}
+
+.title{
+    float: left;
+    display: inline-block;
+    background-color: aquamarine;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+}
+
+.title2{
+    position:relative;
+    color: yellowgreen;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+}
+
+.title3{
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.side_bar{
+    position: fixed;
+    left: 40px;
+    top: 70px;
+    width: 10%;
+    height:10%;
+}
+
+.side_bar_header{
+    background-color: aquamarine;
+}
+
+.side_bar2{
+    position: fixed;
+    left: 10px;
+    top: 70px;
+    width: 10%;
+    height: 10%;
+}
+
+.side_bar_header2{
+    background-color: lightyellow;
+}
+
+.side_bar_header3{
+    background-color: white;
+}
+
+.profile_explanation{
+    position: relative;
+    float:left;
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    background-color: lightyellow;
+}
+
+.profile_explanation2{
+    position: relative;
+    float:left;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: lightyellow;
+}
+
+.profile_div{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a{
+    font-family: "Times New Roman", Times, serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration-color: aqua
+}
+
+th{
+    background-color: darkgrey;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "Times New Roman", Times, serif;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}

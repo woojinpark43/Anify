@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>documentation page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="example.css">
+ 
+ 	<!-- Jquery from a Google CDN.  
+    	 If you don't use either async or defer, the DOM load is blocked until the script is downloaded and executed. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ </head>
+ <body>
+   <table class="main_header">
+      <tr>
+        <th class="side_bar_header"><a href="https://fathomless-beyond-49853.herokuapp.com/">Main Page</a></th>
+        <th class="side_bar_header"><a href="https://fathomless-beyond-49853.herokuapp.com/documentation.html">Documentation</a></th>
+        <th class="side_bar_header"><a href="https://fathomless-beyond-49853.herokuapp.com/example.html">Examples</a></th>
+        <th class="side_bar_header"><a href="https://github.com/csc309-summer-2020/js-library-parkwoo8">Download</a></th>
+      </tr>
+    </table>
+    
+    <table class="side_bar">
+      <tr>
+        <th class="side_bar_header">Anify API</th>
+      </tr>
+      <tr>
+        <td><a href="#Background_Animation">Background Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Circular_Decorate_Canvas_Animation_Maker">Circular Decorate Canvas Animation Maker</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Trail_Animation">Trail Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Bubble_Animation">Bubble Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Text_Animation">Text Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Tetris_Animation">Tetris Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Halloween_Animation">Halloween Animation</a></td>
+      </tr>
+    </table>
+   
+    <div class="main_container">
+        
+        <div class="functions">
+            <div class="title" id="Background_Animation">How to Get Started</div>
+            <div class="nameofmethod">
+                copy and paste the code below to the header of your html page
+            </div><br/><br/>
+            <div class="space"> </div>
+            <div class="nameofmethod">
+                <code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+                    &lt;script defer type="text/javascript" src='anify.js'&gt;&lt;/script&gt;
+                </code>
+            <div class="space"> </div>
+            </div><br/><br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="title" id="Background_Animation">Background Animation</div>
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new BackGroundAnimations(canvas, img = null)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a background animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to draw the background animation</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>img element</td>
+                <td> null </td>
+                <td class="description">an image element that stores picture for the background in the animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                makeSnow()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make snow fall randomly on canvas
+           </div>
+           <br/><br/>
+           
+           <div class="nameofmethod">
+                makeRain()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make rain droplets fall randomly on canvas
+           </div>
+           <br/><br/>
+           
+           <div class="nameofmethod">
+                makeHeart()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make heart to float sideways randomly on canvas
+           </div>
+           <br/><br/>
+           
+           <div class="nameofmethod">
+                makeDiamond()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make diamond to float sideways randomly on canvas
+           </div>
+           <br/><br/>
+            
+        </div>
+        
+<!--        decorate canvas animation-->
+       <div class="functions">
+            <div class="title" id="Circular_Decorate_Canvas_Animation_Maker">Circular Decorate Canvas Animation Maker</div>
+            
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new canvasAnimationDecorationMaker(id, canvasWidth, canvasHeight)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a text canvas animation decoration maker object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>id</td>
+                <td>string</td>
+                <td></td>
+                <td class="description">user can set the id of the maker so they can specify where they want to use it in their DOM</td>
+              </tr>
+              <tr>
+                <td>canvasWidth</td>
+                <td>int</td>
+                <td></td>
+                <td class="description">width of the canvas</td>
+              </tr>
+              <tr>
+                <td>canvasHeight</td>
+                <td>int</td>
+                <td></td>
+                <td class="description">height of the canvas</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                setEdgeColor()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               sets the edge color if the input color is a valid color
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>color</td>
+                <td>string</td>
+                <td></td>
+                <td class="description">the color of the edge of the canvas</td>
+              </tr>
+            </table>
+           <br/><br/>
+        </div>
+        
+<!--        Trail animation-->
+        
+<!--        <h1>Background Animation</h1>-->
+        
+        <div class="functions">
+            <div class="title" id="Trail_Animation">Trail Animation</div>
+            
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new TrailAnimations(canvas, canvasW, canvasH, img = null)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a trail animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to draw the background animation</td>
+              </tr>
+              <tr>
+                <td>canvasW</td>
+                <td>int</td>
+                <td></td>
+                <td class="description">width of the canvas to draw animation on</td>
+              </tr>
+              <tr>
+                <td>canvasH</td>
+                <td>int</td>
+                <td></td>
+                <td class="description">height of the canvas to draw animation on</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>img element</td>
+                <td> null </td>
+                <td class="description">an image element that stores picture for the background in the animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                makeSnow()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make snow trails that follow the cursor when hovering on canvas
+           </div>
+           <br/><br/>
+           
+           <div class="nameofmethod">
+                makeRain()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make rain trails that follow the cursor when hovering on canvas
+           </div>
+           <br/><br/>
+           
+           <div class="nameofmethod">
+                makeHeart()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make heart trails that follow the cursor when hovering on canvas
+           </div>
+           <br/><br/>
+           
+           <div class="nameofmethod">
+                makeDiamond()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make diamond trails that follow the cursor when hovering on canvas
+           </div>
+           <br/><br/>
+            
+        </div>
+    
+<!--    bubble animation-->
+   
+        <div class="functions">
+            <div class="title" id="Bubble_Animation">Bubble Animation</div>
+            
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new BubbleGenerator(canvas, pic_Arr, canvasWidth, canvasHeight, img = null)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a bubble animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to draw the background animation</td>
+              </tr>
+              <tr>
+                <td>pic_Arr</td>
+                <td>list of img elements</td>
+                <td></td>
+                <td class="description">a list of images to make the bubble that randomly moves sideways and go up just like a bubble moving up the surface</td>
+              </tr>
+              <tr>
+                <td>canvasWidth</td>
+                <td>int</td>
+                <td></td>
+                <td class="description">width of the canvas to draw animation on</td>
+              </tr>
+              <tr>
+                <td>canvasHeight</td>
+                <td>int</td>
+                <td></td>
+                <td class="description">height of the canvas to draw animation on</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>img element</td>
+                <td> null </td>
+                <td class="description">an image element that stores picture for the background in the animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                update()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               activate the bubble animation where it creates bubble made by images that makes motions just like a bubble moving up the surface
+           </div>
+           <br/><br/>
+            
+        </div>
+        
+<!--        text animations-->
+   
+        <div class="functions">
+            <div class="title" id="Text_Animation">Text Animation</div>
+            
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new textGenerator(canvas, text, color = "white", font = "30px Arial", img = null)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a text animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to draw the background animation</td>
+              </tr>
+              <tr>
+                <td>text</td>
+                <td>string</td>
+                <td></td>
+                <td class="description">text that is going to be displayed on canvas with animations</td>
+              </tr>
+              <tr>
+                <td>color</td>
+                <td>string</td>
+                <td>white</td>
+                <td class="description">The color of text that is going to be displayed on canvas</td>
+              </tr>
+              <tr>
+                <td>font</td>
+                <td>string</td>
+                <td>30px Arial</td>
+                <td class="description">the size and font of the text that is going to be displayed on canvas</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>img element</td>
+                <td> null </td>
+                <td class="description">an image element that stores picture for the background in the animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                displayOneByOne()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make each letter of the text display one by one until the full text shows on the centre of the canvas repeatedly
+           </div>
+           <br/><br/>
+           
+           <div class="nameofmethod">
+                flashPop()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               repeatedly display letter and make it disappear in a flash
+           </div>
+           <br/><br/>
+            
+        </div>
+        
+<!--        tetris animation-->
+       <div class="functions">
+            <div class="title" id="Tetris_Animation">Tetris Animation</div>
+            
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new TetrisGenerator(canvas, width = 2, img = null)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a tetris animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to display the tetris animation</td>
+              </tr>
+              <tr>
+                <td>width</td>
+                <td>int</td>
+                <td>2</td>
+                <td class="description">the width of the tetris block</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>img element</td>
+                <td> null </td>
+                <td class="description">an image element that stores picture for the background in the animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                update()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               make various types of tetris to fall down randomly on canvas
+           </div>
+           <br/><br/>
+        </div>
+        
+        <!-- Halloween animations-->
+   
+        <div class="functions">
+            <div class="title" id="Halloween_Animation">Halloween Animation</div>
+            
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new ghostGenerator(canvas, ghost_num=1, img = null)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a ghost animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to display ghost animation</td>
+              </tr>
+              <tr>
+                <td>ghost</td>
+                <td>int</td>
+                <td>1</td>
+                <td class="description">number of ghost in the canvas</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>img element</td>
+                <td> null </td>
+                <td class="description">an image element that stores picture for the background in the animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                update()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+                display ghost animation on the canvas with the specified number of ghosts
+           </div>
+           <br/><br/>
+            
+        </div>
+        
+        <div class="functions">
+
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new RedEyeGenerator(canvas)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a redEye animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to display redEye animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                update()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+                display redEye animation on the canvas specified
+           </div>
+           <br/><br/>
+            
+        </div>
+        
+        <div class="functions">
+
+            <div class="header">
+                <span>Constructor</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                new PumpkinGenerator(canvas)
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+               Create a pumpkin animation object
+           </div>
+           <br/><br/>
+           
+           <div class="parameters">
+               Parameters:
+           </div>
+           <table style="width:100%">
+              <tr>
+                <th>Name</th>
+                <th>Type</th> 
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>canvas</td>
+                <td>canvas element</td>
+                <td></td>
+                <td class="description">canvas to display pumpkin animation</td>
+              </tr>
+            </table>
+            <br/>
+            
+        </div>
+        
+        <div class="functions">
+            <div class="header">
+                <span>Methods</span>
+            </div>
+            <br/>
+          
+           <div class="nameofmethod">
+                update()
+           </div><br/><br/>
+           <div class="descriptionofmethod">
+                display pumpkin animation on the canvas specified
+           </div>
+           <br/><br/>
+            
+        </div>
+    
+    </div>
+
+ </body>
+
+</html>

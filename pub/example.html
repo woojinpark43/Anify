@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>Dynamic user Profile</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="example.css">
+ 
+ 	<!-- Jquery from a Google CDN.  
+    	 If you don't use either async or defer, the DOM load is blocked until the script is downloaded and executed. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer type="text/javascript" src='anify.js'></script>
+    <script defer type="text/javascript" src='example.js'></script>
+
+
+
+ </head>
+ <body>
+   <table class="main_header">
+      <tr>
+        <th class="side_bar_header2"><a href="https://fathomless-beyond-49853.herokuapp.com/">Main Page</a></th>
+        <th class="side_bar_header2"><a href="https://fathomless-beyond-49853.herokuapp.com/documentation.html">Documentation</a></th>
+        <th class="side_bar_header2"><a href="https://fathomless-beyond-49853.herokuapp.com/example.html">Examples</a></th>
+        <th class="side_bar_header2"><a href="https://github.com/csc309-summer-2020/js-library-parkwoo8">Download</a></th>
+      </tr>
+    </table>
+   
+    <table class="side_bar2">
+      <tr>
+        <th class="side_bar_header2">Anify Examples</th>
+      </tr>
+      <tr>
+        <td><a href="#Circular_Decorate_Canvas_Animation_Maker" class="title3">Circular Decorate Canvas Animation Maker</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Background_Animation" class="title3">Background Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Trail_Animation" class="title3">Trail Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Bubble_Animation" class="title3">Bubble Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Tetris_Animation" class="title3">Tetris Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Halloween_Animation" class="title3">Halloween Animation</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Text_Animation" class="title3">Text Animation</a></td>
+      </tr>
+    </table>
+ 
+    <div class="main_container2">
+ 	<h1 class="title2">EXAMPLES</h1>
+ 	
+ 	<div class='animation_dispaly'>
+ 	<h2 class="title2" id="Circular_Decorate_Canvas_Animation_Maker">Canvas Decorate Animation Maker</h2>
+ 	<div class='profile_div'>
+        <div class="canvas_section">
+            <div class="profile_can" id="maker"></div>
+        </div>
+ 	    <div class="profile_explanation">
+ 	        <h2>How to use it?</h2>
+ 	        <h3>click the canvas on the left to open up the popup for animation maker</h3>
+ 	        <h3>You can place images and upload pictures from your desktop and even add an animation that fits your picture.</h3>
+ 	        <h3>-Upload Photo: lets you upload the picture you want from the desktop</h3>
+ 	        <h3>-Undo: removes the last image or picture you put on canvas.</h3>
+ 	        <h3>-Clear: clear all the picture and images from the canvas</h3>
+ 	    </div>
+ 	</div>
+    </div>
+ 	
+    <div class="space"> </div>
+ 	
+ 	<div class='animation_dispaly'>
+        <h2 class="title2" id="Background_Animation">Background Animations</h2>
+ 	    <div class='animation_container'>
+ 	        <canvas id="snow"></canvas>
+ 	        <h3 class="text_center"> snow </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="rain"></canvas>
+ 	        <h3 class="text_center"> rain </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="heart"></canvas>
+ 	        <h3 class="text_center"> heart </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="diamond"></canvas>
+ 	        <h3 class="text_center"> diamond </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="snowWithPic"></canvas>
+ 	        <h3 class="text_center"> snow </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="rainWithPic"></canvas>
+ 	        <h3 class="text_center"> rain </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="heartWithPic"></canvas>
+ 	        <h3 class="text_center"> heart </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="diamondWithPic"></canvas>
+ 	        <h3 class="text_center"> diamond </h3>
+ 	    </div>
+ 	    
+ 	    <div class="profile_explanation2">
+ 	        <h3 class="text_center" >Background animations that can use to give live-action to images</h3>
+ 	    </div>
+ 	</div>
+ 	<div class="space"></div>
+ 	
+ 	<div class='animation_dispaly'>
+       <h2 class="title2" id="Trail_Animation">Trail Animation</h2>
+        <div class='animation_container'>
+ 	        <canvas id="snow_trail"></canvas>
+ 	        <h3 class="text_center"> snow trail </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="rain_trail"></canvas>
+ 	        <h3 class="text_center"> rain trail </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="heart_trail"></canvas>
+ 	        <h3 class="text_center"> heart trail </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="diamond_trail"></canvas>
+ 	        <h3 class="text_center"> diamond trail </h3>
+ 	    </div>
+ 	    
+ 	    <div class="profile_explanation2">
+ 	        <h3 class="text_center"> hover on the canvas to see the animation</h3>
+ 	        <h3 class="text_center" >A user interactive animation that makes trail along with the mouse when the user hovers on canvas</h3>
+ 	    </div>
+ 	</div>
+ 	
+ 	<div class="space"> </div>
+ 	
+ 	<div class='animation_dispaly'>
+        <h2 class="title2" id="Bubble_Animation">Bubble animation</h2>
+        <div>
+ 	        <canvas class="bubble_canv" id="bubble"></canvas>
+ 	        <h3 class="text_center"> bubble </h3>
+ 	    </div>
+ 	    
+ 	    <div class="profile_explanation2">
+ 	        <h3 class="text_center" >A bubble animation where it displays images in random size that goes up like a bubble.</h3>
+ 	    </div>
+ 	</div>
+ 	
+ 	<div class="space"> </div>
+ 	
+ 	<div class='animation_dispaly'>
+        <h2 class="title2" id="Tetris_Animation">Tetris animation</h2>
+        <div>
+ 	        <canvas id="tetris"></canvas>
+ 	        <h3 class="text_center"> tetris </h3>
+ 	    </div>
+ 	    <div class="profile_explanation2">
+ 	        <h3 class="text_center" >Tetris animation that makes tetris blocks fall down</h3>
+ 	    </div>
+ 	</div>
+ 	
+ 	<div class="space"> </div>
+ 	
+ 	<div class='animation_dispaly' style='float:left'>
+       <h2 class="title2" id="Halloween_Animation">Halloween animation</h2>
+        <div class='animation_container'>
+ 	        <canvas id="ghost"></canvas>
+ 	        <h3 class="text_center"> ghost </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="hunted_party"></canvas>
+ 	        <h3 class="text_center"> hunted house party </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="pumpkin"></canvas>
+ 	        <h3 class="text_center"> pumpkin </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="redEye"></canvas>
+ 	        <h3 class="text_center"> red eye </h3>
+ 	    </div>
+ 	    <div class="profile_explanation2">
+ 	        <h3 class="text_center" >Halloween related animations</h3>
+ 	    </div>
+ 	</div>
+ 	
+ 	<div class="space"> </div>
+ 	
+ 	<div class='animation_dispaly' style='float:left'>
+       <h2 class="title2" id="Text_Animation">Text Animation</h2>
+        <div class='animation_container'>
+ 	        <canvas id="text1"></canvas>
+ 	        <h3 class="text_center"> Birthday </h3>
+ 	    </div>
+ 	    <div class='animation_container'>
+ 	        <canvas id="text2"></canvas>
+ 	        <h3 class="text_center"> Warning </h3>
+ 	    </div>
+ 	    <div class="profile_explanation2">
+ 	        <h3 class="text_center" >Text animation that gives different effects to texts</h3>
+ 	    </div>
+ 	</div>
+ 	</div>
+
+ </body>
+
+</html>

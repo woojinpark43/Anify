@@ -29,7 +29,7 @@ app.get('/example.html', (req, res) => {
 
 app.get('/documentation.html', (req, res) => {
 	//sending some HTML to the client
-	res.send('example.html')
+	res.send('documentation.html')
 })
 
 // will use an 'environmental variable', process.env.PORT, for deployment.

@@ -2,10 +2,10 @@
 Anify is a library where we help users to use animation on canvas
 
 # Copy of Landing Page #
-http://fathomless-beyond-49853.herokuapp.com/
+https://anify.netlify.app/
 
 # Copy of Documentation Page #
-https://fathomless-beyond-49853.herokuapp.com/documentation.html
+https://anify.netlify.app/documentation.html
 
 # How to get started #
 copy and paste the code below to the header of your html page
